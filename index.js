@@ -13,7 +13,7 @@ const urlSchema = new mongoose.Schema({
 })
 
 const url = mongoose.model('url', urlSchema)
-
+   
 app.use(express.json());
 
 app.post('/api/shortner', async (req, res) => {
